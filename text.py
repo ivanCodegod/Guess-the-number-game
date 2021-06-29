@@ -1,8 +1,10 @@
 def intro():
     print(
-        f'Welcome to the "Guess the number" game!!!\n\nYou have only 5 attempts to find the number\nMake a suggestion: ')
+        f'Welcome to the "Guess the number" game!!!\n\nYou have only 5 attempts to find the number\nTry to guess the '
+        f'number')
 
 
-def level():
-    print("Choose complexity of the game:\n\t1 - easy\n\t2 - medium\n\t3 - hardcore")
-    return int(input())
+def random_number(l, h):
+    from random import randint
+    return randint(l, h)
+
