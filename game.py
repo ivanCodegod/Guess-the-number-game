@@ -1,5 +1,5 @@
 from text import *
-
+from colorama import Fore
 intro()  # How to play
 low, high = None, None  # tmp values
 attempt = 5  # Default value
@@ -28,4 +28,4 @@ while number != hide_number and attempt:
         if attempt:
             print(f'You have {attempt} more attempt')
 
-print(f'You guess the number, good job!!!' if attempt else f'You lose')
+print(Fore.GREEN + f'You guess the number, good job!!!' if attempt else Fore.RED + f'You lose')
